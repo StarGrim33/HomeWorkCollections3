@@ -23,6 +23,7 @@
                     {
                         sum += number;
                     }
+
                     Console.WriteLine("Сумма чисел равна: " + sum);
                 }
                 else if (userInput == exitCommand)
@@ -34,15 +35,14 @@
                 }
                 else
                 {
-                    int convertStringToNumber = 0;
+                    int integerUserInput = 0;
 
-                    if (int.TryParse(userInput, out convertStringToNumber))
+                    if (int.TryParse(userInput, out integerUserInput))
                     {
-                        numbers.Add(convertStringToNumber);
+                        numbers.Add(integerUserInput);
                     }
                 }
             }
         }
-
     }
 }
